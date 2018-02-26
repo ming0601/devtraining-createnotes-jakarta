@@ -4,18 +4,7 @@
         <client_script><![CDATA[function($scope,$rootScope) {
 	/* widget controller */
 	var c = this;
-	c.updateNote = function(updateType) {
-		c.server.get({
-			action: 'updateNote',
-			noteID: c.data.noteID,
-			noteBody: c.data.note,
-			noteTitle: c.data.title
-		}).then(function(r) {
-			if(updateTupe == 'title' || updateType == 'body'){
-				$rootScope.$emit('updateTitle',r.data);
-			}
-		});
-	}
+
 
 	$rootScope.$on('selectNote', function(event,data) {
 		c.server.get({
@@ -27,6 +16,18 @@
 			c.data.noteID = r.data.note.sys_id;
 		});
 	});
+		c.updateNote = function(updateType) {
+		c.server.get({
+			action: 'updateNote',
+			noteID: c.data.noteID,
+			noteBody: c.data.note,
+			noteTitle: c.data.title
+		}).then(function(r) {
+			if(updateTupe == 'title' || updateType == 'body'){
+				$rootScope.$emit('updateTitle',r.data);
+			}
+		});
+	}
 }]]></client_script>
         <controller_as>c</controller_as>
         <css/>
@@ -36,10 +37,10 @@
         <docs/>
         <field_list/>
         <has_preview>false</has_preview>
-        <id>notes-body</id>
+        <id>notes_body1</id>
         <internal>false</internal>
         <link/>
-        <name>Notes Body</name>
+        <name>Notes Body1</name>
         <option_schema/>
         <public>false</public>
         <roles/>
@@ -64,16 +65,16 @@
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-02-26 09:26:52</sys_created_on>
-        <sys_id>9c04e609db2013004aaffbefbf961981</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Notes Body</sys_name>
+        <sys_created_on>2018-02-26 12:57:27</sys_created_on>
+        <sys_id>c5341385dba013004aaffbefbf961989</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Notes Body1</sys_name>
         <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
         <sys_policy/>
         <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
-        <sys_update_name>sp_widget_9c04e609db2013004aaffbefbf961981</sys_update_name>
+        <sys_update_name>sp_widget_c5341385dba013004aaffbefbf961989</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-02-26 12:49:18</sys_updated_on>
+        <sys_updated_on>2018-02-26 13:06:25</sys_updated_on>
         <template><![CDATA[<div class="panel panel-default" ng-show="c.data.noteID">
   <div class="panel-heading clearfix">
     <div class="row">

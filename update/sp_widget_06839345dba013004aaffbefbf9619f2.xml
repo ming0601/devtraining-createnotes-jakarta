@@ -28,11 +28,11 @@
         <description/>
         <docs/>
         <field_list/>
-        <has_preview>true</has_preview>
-        <id>notes_list</id>
+        <has_preview>false</has_preview>
+        <id>notes_list1</id>
         <internal>false</internal>
         <link/>
-        <name>Notes List</name>
+        <name>Notes List1</name>
         <option_schema/>
         <public>false</public>
         <roles/>
@@ -67,16 +67,16 @@ Create the notes property on the data object which will contain an array of obje
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-02-26 09:19:57</sys_created_on>
-        <sys_id>c762e249db2013004aaffbefbf961980</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Notes List</sys_name>
+        <sys_created_on>2018-02-26 12:54:31</sys_created_on>
+        <sys_id>06839345dba013004aaffbefbf9619f2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Notes List1</sys_name>
         <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
         <sys_policy/>
         <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
-        <sys_update_name>sp_widget_c762e249db2013004aaffbefbf961980</sys_update_name>
+        <sys_update_name>sp_widget_06839345dba013004aaffbefbf9619f2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-02-26 12:34:37</sys_updated_on>
+        <sys_updated_on>2018-02-26 12:56:46</sys_updated_on>
         <template><![CDATA[<div class="panel panel-default">
 <div class="panel-heading clearfix">
 <h3 class="panel-title pull-left">
